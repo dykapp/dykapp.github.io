@@ -1,0 +1,141 @@
+languageCode = 'en-us'
+baseURL = ""
+title = "DYK"
+paginate = 5
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+googleAnalytics = "UA-123-45"
+pygmentsUseClasses = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "ExampleSite"
+description = "ExampleSite description"
+keywords = [ "Blog", "Documentation", "PaperMod" ]
+author = "DYK"
+images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = false
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+  [params.assets]
+  favicon = "<link / abs url>"
+  favicon16x16 = "<link / abs url>"
+  favicon32x32 = "<link / abs url>"
+  apple_touch_icon = "<link / abs url>"
+  safari_pinned_tab = "<link / abs url>"
+
+  [params.label]
+  text = "DYK"
+  icon = "/apple-touch-icon.png"
+  iconHeight = 35
+
+  [params.profileMode]
+  enabled = false
+  title = "ExampleSite"
+  subtitle = "This is subtitle"
+  imageUrl = "<img location>"
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "posts"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Did You Know?"
+  Content = "The Dyatlov Pass incident remains an unsolved mystery where a group of experienced hikers died under eerie circumstances in the Russian Ural Mountains, leaving behind a torn tent and bodies with unexplained injuries."
+
+  [[params.socialIcons]]
+  name = ""
+  url = ""
+
+
+[params.analytics.google]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.bing]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.yandex]
+SiteVerificationTag = "XYZabc"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.editPost]
+  URL = ""
+  Text = ""
+  appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+
+[[menu.main]]
+identifier = "search"
+name = "search"
+url = "/search/"
+weight = 1
+
+[[menu.main]]
+identifier = "archives"
+name = "archives"
+url = "/archives/"
+weight = 2
+
+[[menu.main]]
+identifier = "categories"
+name = "categories"
+url = "/categories/"
+weight = 3
+
+[[menu.main]]
+identifier = "tags"
+name = "tags"
+url = "/tags/"
+weight = 4
+
