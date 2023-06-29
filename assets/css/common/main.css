@@ -1,7 +1,11 @@
+/* Custom code */
+
+/* Custom code end */
+
 .main {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    max-width: calc(var(--main-width) + var(--gap) * 10);
+    max-width: calc(var(--main-width) + var(--gap) * 20); /* custom */
     margin: auto;
     padding: var(--gap);
 }

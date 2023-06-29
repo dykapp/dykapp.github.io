@@ -1,3 +1,35 @@
+/* Custom TOC */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 15em;
+}
+
+.post-container {
+    padding-right: 5rem;
+}
+
+.custom-toc {
+    font-size: 0.90rem;
+    color: darkgray;
+    margin: 0;
+    padding-left: 1.50rem;
+    position: sticky;
+    top: 20vh;
+    align-self: self-start;
+    border-left: 0.5px solid rgb(88, 88, 88);
+}
+
+.custom-toc nav ul li {
+    list-style: none;
+}
+
+.custom-toc a:hover {
+    color: rgb(111, 126, 255);
+}
+
+/* End of custom code */
+
 .page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;
@@ -284,6 +316,7 @@
 .toc .inner {
     margin: 0 20px;
     padding: 10px 20px;
+    
 }
 
 .toc li ul {
